@@ -1,0 +1,29 @@
+/consumable/:
+    put:
+        tags:
+            -  Consumable Product Categories
+        description:
+             Create a  Consumable Product Categories 
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example: null
+                            name:
+                                type: string
+                                example: "Milk"
+                            active:
+                                type: boolean
+                                example: true
+                                  
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

@@ -1,0 +1,11 @@
+/productattributes/:
+    post:
+        tags:
+            - Productattributes
+        description:
+                Get all productattributes
+        
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

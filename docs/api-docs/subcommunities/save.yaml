@@ -1,0 +1,37 @@
+/subCommunity/:
+    put:
+        tags:
+            -  Sub Communities
+        description:
+             Create/update a  Sub Community 
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example : null
+                            name:
+                                type: string
+                                example: "Ramki-tower1"
+                            active:
+                                type: boolean
+                                example: true    
+                            community:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1
+                                
+                            
+                                  
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

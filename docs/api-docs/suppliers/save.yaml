@@ -1,0 +1,34 @@
+/supplier/:
+    put:
+        tags:
+            - Suppliers
+        description:
+             Create / update suppliers
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example : null
+                            name:
+                                type: string
+                                example: "Hariprasad"
+                            mobile:
+                                type: string
+                                example: "8978325778"
+                            comments:
+                                type: string
+                                example: "Best supplier of 2017 :P"                       
+                            active:
+                                type: boolean
+                                example: true    
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

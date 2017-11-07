@@ -1,0 +1,17 @@
+/subCommunity/CommunityId/{id}:
+    get:
+        tags:
+            - Sub Communities
+        description:
+                Get sub Communities by community id 
+        
+        parameters:
+            - name: id
+              in: path
+              required: true
+              type: number
+
+
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

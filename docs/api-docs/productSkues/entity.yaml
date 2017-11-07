@@ -1,0 +1,14 @@
+/productSkues/{id}:
+  get:
+    tags:
+      - Product Skues
+    description:
+        Get a Product Skue
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: number
+    responses:
+        200:
+            description: "status:1 is success; status: 0 is failure;"

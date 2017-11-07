@@ -1,0 +1,17 @@
+/dwelling/subCommunityId/{id}:
+    get:
+        tags:
+            - Dwellings
+        description:
+                Get dwellings by  sub community id 
+        
+        parameters:
+            - name: id
+              in: path
+              required: true
+              type: number
+
+
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

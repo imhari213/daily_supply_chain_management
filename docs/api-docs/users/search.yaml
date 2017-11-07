@@ -1,0 +1,11 @@
+/user/:
+    post:
+        tags:
+            - Users
+        description:
+                Get all users 
+        
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

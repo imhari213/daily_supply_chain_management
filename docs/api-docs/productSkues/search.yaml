@@ -1,0 +1,11 @@
+/productSkues/:
+    post:
+        tags:
+            - Product Skues
+        description:
+                Get all Product Skues 
+        
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

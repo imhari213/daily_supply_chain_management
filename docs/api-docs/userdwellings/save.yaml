@@ -1,0 +1,40 @@
+/userDwelling/:
+    put:
+        tags:
+            - User Dwellings
+        description:
+             Create User dwellings
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example: null
+                            effective:
+                                type: date
+                                example: "1000-01-01 00:00:00"  
+                            users:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1      
+
+                            dwellings:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1 
+                            
+                            
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

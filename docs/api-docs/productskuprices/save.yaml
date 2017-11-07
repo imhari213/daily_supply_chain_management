@@ -1,0 +1,35 @@
+/productskuprice/:
+    put:
+        tags:
+            - Productskuprice
+        description:
+             Create / update ProductSkuPrice
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example : null
+                            product_sku_id:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1
+                            price:
+                                type: number
+                                example: 100
+                            effective:
+                                type: Date
+                                example: "1000-01-01 00:00:00"
+                          
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

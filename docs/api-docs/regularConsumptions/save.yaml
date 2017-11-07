@@ -1,0 +1,44 @@
+/regular/:
+    put:
+        tags:
+            - Regular Consumption
+        description:
+             Create Regular Consumption 
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example: null  
+                            user_dwelling_id:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1 
+                            product_skus:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1     
+                            quantity:
+                                type: number
+                                example: 2
+                            supplier_id:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1
+                            
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

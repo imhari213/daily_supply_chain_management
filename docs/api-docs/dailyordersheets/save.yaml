@@ -1,0 +1,47 @@
+/daily/:
+    put:
+        tags:
+            - DailyOrderSheets
+        description:
+             Create / update Daily Order Sheet Account
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example : null
+                            manufacturers:
+                                type: object
+                                properties:
+                                    id: 
+                                        type: number
+                                        example : 1
+                            product_skus:
+                                type: object
+                                properties:
+                                    id: 
+                                        type: number
+                                        example : 1
+                            order_date:
+                                type: date
+                                example: "2017-10-01 00:00:00"
+                            quantity:
+                                type: number
+                                example: "2"
+                            suppliers:
+                                type: object
+                                properties:
+                                    id: 
+                                        type: number
+                                        example : 1
+                               
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

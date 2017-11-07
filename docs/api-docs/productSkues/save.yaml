@@ -1,0 +1,42 @@
+/productSkues/:
+    put:
+        tags:
+            -  Product Skues
+        description:
+             Create/update a  product Skue
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example : null
+                            name:
+                                type: string
+                                example: "Skimmed thirty percent low fat"
+                            active:
+                                type: boolean
+                                example: true    
+                            products_id:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1
+                            price:
+                                type: number
+                                example: "25"
+                            effective:
+                                type: date
+                                example: "1000-01-01 00:00:00"    
+                            
+                                  
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

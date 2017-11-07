@@ -1,0 +1,30 @@
+/manufacturers/:
+    put:
+        tags:
+            - Manufacturers
+        description:
+             Create / update manufacturers items
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example : null
+                            name:
+                                type: string
+                                example: "sanjeevini"
+                            active:
+                                type: boolean
+                                example: false    
+                            comments:
+                                type: string
+                                example: "kfakffisthecommentandreason"
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

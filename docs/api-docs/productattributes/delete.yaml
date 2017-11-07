@@ -1,0 +1,14 @@
+/productattributes/{id}:
+  delete:
+    tags:
+      - Productattributes
+    description:
+        Delete a productattributes
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: number
+    responses:
+        200:
+            description: "status:1 is success; status: 0 is failure;"

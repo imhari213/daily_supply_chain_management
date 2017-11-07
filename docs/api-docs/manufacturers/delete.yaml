@@ -1,0 +1,14 @@
+/manufacturers/{id}:
+  delete:
+    tags:
+      - Manufacturers
+    description:
+        Delete a product manufactured
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: number
+    responses:
+        200:
+            description: "status:1 is success; status: 0 is failure;"

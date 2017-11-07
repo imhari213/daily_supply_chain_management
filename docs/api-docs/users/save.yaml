@@ -1,0 +1,40 @@
+/user/:
+    put:
+        tags:
+            - Users
+        description:
+             Create / update User Account
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example : null
+                            name:
+                                type: string
+                                example: "sanjeevini"
+                            email:
+                                type: string
+                                example: "sanju@gmail.com"
+                            phone:
+                                type: string
+                                example: "9876567890"
+                            password:
+                                type: string
+                                example: "yududubs"
+                            salt:
+                                type: string
+                                example: "kfakff"
+                            active:
+                                type: boolean
+                                example: false    
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

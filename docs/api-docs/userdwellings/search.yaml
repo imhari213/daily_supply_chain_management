@@ -1,0 +1,22 @@
+/userDwelling/:
+    post:
+        tags:
+            - User Dwellings
+        description:
+                Get all User Dwellings 
+        
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example: "null or user id"                       
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

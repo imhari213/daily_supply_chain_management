@@ -1,0 +1,37 @@
+/productCategory/:
+    put:
+        tags:
+            -  Product Categories
+        description:
+             Create/update a  product category
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            id:
+                                type: number
+                                example : null
+                            name:
+                                type: string
+                                example: "Skimmed low fat milk"
+                            active:
+                                type: boolean
+                                example: true    
+                            consumable_product_categories:
+                                type: object
+                                properties: 
+                                   id: 
+                                     type: number
+                                     example : 1
+                                
+                            
+                                  
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

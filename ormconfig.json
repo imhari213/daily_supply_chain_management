@@ -1,0 +1,21 @@
+[
+    {
+      "name": "default",
+      "driver": {
+        "type": "mysql",
+        "host" :"35.202.92.50",
+        "port": 3306,
+        "username": "root",
+        "password": "Shashi123*",
+        "database": "milkman",
+        "usePool": true
+      },
+      "autoSchemaSync": false,
+      "entities": [
+        "dist/models/entities/*.js"
+      ],
+      "cli": {
+        "entitiesDir": "dist/models/entities"
+      }
+    }
+  ]

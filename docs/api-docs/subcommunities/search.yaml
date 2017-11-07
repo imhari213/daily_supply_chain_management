@@ -1,0 +1,11 @@
+/subCommunity/:
+    post:
+        tags:
+            - Sub Communities
+        description:
+                Get all Sub Communities 
+        
+                            
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"

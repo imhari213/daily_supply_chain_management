@@ -1,0 +1,25 @@
+/regular/:
+    post:
+        tags:
+            - Regular Consumption
+        description:
+                Get all or one by  regular consumptions 
+        
+        parameters:
+          - name: body
+            in: body
+            schema:
+                type: object
+                properties:
+                    data:
+                        type: object
+                        properties:
+                            supplier_id:
+                              type: number
+                              example: "null or supplier_id" 
+                            user_dwelling_id:
+                              type: number
+                              example: "null or user_dwelling_id"                       
+        responses:
+            200:
+                description: "status:1 is success; status: 0 is failure;"
